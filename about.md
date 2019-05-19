@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hi, I'm a softare engineer currently focused on designing and building out a RESTful service architecture for a Chicago-area company.
 
-### More Information
+I have extensive experience Python, Django and RESTful design. I've open sourced some of <a href="{{ site.baseurl }}/projects">my work</a>, which is used extensively in the Django ecosystem. On the front end, I have designed and built a number of large-scale, complex Angular applications.
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+In addition to my open-source work, I have some availability on a consultancy basis for development and design. If you would like to discuss collaborating, please <a href="mailto:robertgsinger@gmail.com">get in touch</a>. I enjoy building elegant solutions to complex problems and iterating as new business opportunities emerge.
