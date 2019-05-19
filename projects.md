@@ -6,9 +6,9 @@ permalink: /projects/
 
 ## Django Lifecycle
 
-I wrote this <a href="https://github.com/rsinger86/django-lifecycle" target="_blank">package</a> to address what I saw as a weakness in Django's <a href="https://docs.djangoproject.com/en/dev/topics/signals/" target="_blank">built-in approach</a> to model lifecycle events, which dispatches to a handler outside the model class. My library provides a decorator interface to declaritively describe when methods on the model should fire in response to lifecycle events, optionally predicated on field changes.
+I wrote this <a href="https://github.com/rsinger86/django-lifecycle" target="_blank">package</a> to address what I saw as a weakness in Django's <a href="https://docs.djangoproject.com/en/dev/topics/signals/" target="_blank">built-in approach</a> to model lifecycle events, which dispatches to a handler outside the model class. My package provides a decorator interface to declaritively describe when methods on the model should fire in response to lifecycle events, optionally predicated on field changes.
 
-Django is a great framework, but lacking a declaritive lifecycle interface -- critical for reducing complexity as projects evolve -- seemed like a weak point relative to <a href="https://guides.rubyonrails.org/active_record_callbacks.html" target="_blank">Rails</a> for complex, enterprise scale apps.
+Django is a great framework, but lacking a declaritive lifecycle interface -- critical for managing complexity as projects evolve -- seemed like a weak point relative to <a href="https://guides.rubyonrails.org/active_record_callbacks.html" target="_blank">Rails</a> for sophisticated, enterprise-scale apps.
 
 ## Django REST - FlexFields
 
