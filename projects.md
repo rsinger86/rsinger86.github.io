@@ -4,6 +4,10 @@ title: Projects
 permalink: /projects/
 ---
 
+## Disqors
+
+I made this [web app](https://www.disqors.com/) to scratch an itch from the heyday of blogging -- before Twitter became the public forum for political and social commentary. I've always found writing on the internet most interesting when authors engage with each other's arguments, so I built a backend in Python that seeks to surface and connect those articles into a discussion graph. Seeded by a predefined list of sources, it crawls and parses through articles and uses various heuristics, [PageRank](https://en.wikipedia.org/wiki/PageRank)-inspired algorithms and NLP techniques to measure the strength of connections and the quality of content. The frontend is written in TypeScript/Angular.
+
 ## Django Lifecycle
 
 I wrote this <a href="https://github.com/rsinger86/django-lifecycle" target="_blank">package</a> to address what I saw as a weakness in Django's <a href="https://docs.djangoproject.com/en/dev/topics/signals/" target="_blank">built-in approach</a> to model lifecycle events, which dispatches to a handler outside the model class. My package provides a decorator interface to declaritively describe when methods on the model should fire in response to lifecycle events, optionally predicated on field changes.
