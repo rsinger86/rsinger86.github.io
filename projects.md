@@ -4,9 +4,11 @@ title: Projects
 permalink: /projects/
 ---
 
+<!---
 ## Disqors
 
 I made this [web app](https://www.disqors.com/) to scratch an itch from the heyday of blogging -- before Twitter became the public forum for political and social commentary. I've always found writing on the internet most interesting when authors engage with each other's arguments, so I built a backend in Python that seeks to surface and connect those articles into a discussion graph. Seeded by a predefined list of sources, it crawls and parses through articles and uses various heuristics, [PageRank](https://en.wikipedia.org/wiki/PageRank)-inspired algorithms and NLP techniques to measure the strength of connections and the quality of content. The frontend is written in TypeScript/Angular.
+--->
 
 ## Django Lifecycle
 
@@ -26,6 +28,11 @@ This <a href="https://github.com/rsinger86/drf-flex-fields" target="_blank">pack
 This <a href="https://github.com/rsinger86/drf-access-policy" target="_blank">package</a> provides declarative, explicit authorization for Django REST Framework projects. I really like how AWS designed its <a href="https://aws.amazon.com/iam/" target="_blank">Identity Access Management</a>
  (IAM) service -- powerful and flexible, combining context-based and role-based access rules in JSON policies. This package is inspired and partly modeled after IAM. Programmer error and confusion can be a major security vulnerability, and I've tried to provide a higher-level syntax that allows developers (and maybe even non-technical stakeholders) to focus on the rules of the business, not the code. Access policies are also JSON-serializable, allowing them to be stored outside the codebase and injected dynamically. You can change access rules without redeploying code, a key benefit for complex enterprise systems that are always changing.
 
-## Django REST - Typed Views
+## Django REST - Typed
 
-The idea of using Python's type annotations during runtime for data validation has taken off in more recent projects (<a href="https://docs.apistar.com/" target="_blank">API Star</a>, <a href="https://github.com/tiangolo/fastapi" target="_blank">FastAPI</a>). As a big fan of Django's batteries-included approach, I wanted to see this feature in REST Framework. This project adds a couple of decorators to enable this feature. Mostly, this <a href="https://github.com/rsinger86/drf-typed-views" target="_blank">project</a> is just an adapter to Django REST's existing serializer fields, but it also enables integration with other libraries, such as <a href="https://pydantic-docs.helpmanual.io/" target="_blank">Pydantic</a> and <a href="https://marshmallow.readthedocs.io/en/stable/" target="_blank">Marshmallow</a>. Special thanks to this <a href="https://instagram-engineering.com/types-for-python-http-apis-an-instagram-story-d3c3a207fdb7" target="_blank">blog post</a> by Instagram for inspiring the decorator-based approach.
+The idea of using Python's type annotations during runtime for data validation has taken off in more recent projects (<a href="https://docs.apistar.com/" target="_blank">API Star</a>, <a href="https://github.com/tiangolo/fastapi" target="_blank">FastAPI</a>). As a big fan of Django's batteries-included approach, I wanted to see this feature in REST Framework. This project adds a couple of decorators to enable this feature. Mostly, this <a href="https://github.com/rsinger86/drf-typed" target="_blank">project</a> is just an adapter to Django REST's existing serializer fields, so they can be used to automatically validate view parameters. It also allows use of type annotations as shorthand for declaring serializer fields.
+
+## DTO Classes
+
+This <a href="https://github.com/rsinger86/dto-classes" target="_blank">project</a> is a TypeScript library for modelling data transfer objects in HTTP JSON APIs, especially <a href="https://nestjs.com/" target="_blank">NestJS</a>-powered ones. It provides static types by default, which makes it easy to integrate with NestJS's pipe validation. The developer interface is much closer to popular Python parsing libraries like DRF and Pydantic, while the Node ecosystem seems to favor <a href="https://github.com/colinhacks/zod" target="_blank">method chaining</a> and <a href="https://github.com/typestack/class-validator" target="_blank">decorators</a>.
+
